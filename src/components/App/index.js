@@ -12,12 +12,12 @@ function App() {
   return (
     <div>
       <Header />
-      <Landing />
+      {/* <Landing /> */}
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="*" element={<ErrorPage />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/" element={<Welcome />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </div>
